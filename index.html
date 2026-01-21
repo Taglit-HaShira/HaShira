@@ -13,17 +13,30 @@
         .tagline { font-size: 1.25rem; color: #888; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 60px; font-weight: normal; }
         
         .hero-statement { font-size: clamp(1.5rem, 4vw, 2.2rem); line-height: 1.3; max-width: 900px; margin: 0 auto 40px auto; color: #fff; }
-        .highlight { color: #d4af37; font-weight: bold; }
+        
+        /* Равнозначное выделение ключевых слов */
+        .key-concept { color: #d4af37; font-weight: bold; font-style: normal; }
 
-        .description { font-size: 1.35rem; color: #ccc; max-width: 850px; margin: 0 auto 60px auto; line-height: 1.8; }
-        .description em { color: #d4af37; font-style: normal; font-weight: 500; }
+        .description { font-size: 1.35rem; color: #ccc; max-width: 850px; margin: 0 auto 40px auto; line-height: 1.8; }
 
-        .portal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
-        .portal-card { background: #0a0a0a; border: 1px solid #1a1a1a; padding: 45px 30px; transition: 0.5s ease; text-align: left; }
+        /* Секция Journey над кнопками */
+        .journey-preview {
+            max-width: 800px; margin: 0 auto 60px auto; padding: 30px;
+            border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+            background: rgba(212, 175, 55, 0.02);
+        }
+        .journey-preview h3 { font-family: 'Cinzel', serif; color: #d4af37; margin-top: 0; letter-spacing: 2px; }
+        .journey-preview p { font-style: italic; color: #aaa; font-size: 1.1rem; }
+
+        /* Сетка кнопок-порталов */
+        .portal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
+        .portal-card { background: #0a0a0a; border: 1px solid #1a1a1a; padding: 45px 30px; transition: 0.5s ease; text-align: left; text-decoration: none; color: inherit; display: block; }
         .portal-card:hover { border-color: #d4af37; background: #0f0f0f; transform: translateY(-8px); }
         .portal-card h3 { font-family: 'Cinzel', serif; color: #d4af37; margin-top: 0; font-size: 1.6rem; letter-spacing: 2px; }
-        .portal-card .level-tag { font-size: 0.7rem; color: #d4af37; text-transform: uppercase; letter-spacing: 2px; border: 1px solid #333; padding: 2px 8px; display: inline-block; margin-bottom: 15px; }
-        .portal-card p { font-size: 1.05rem; color: #999; }
+        .portal-card p { font-size: 1rem; color: #999; margin-bottom: 0; }
+        
+        /* Интегрированные технические пояснения (внизу карточек) */
+        .level-note { display: block; margin-top: 20px; font-size: 0.75rem; color: #555; text-transform: uppercase; letter-spacing: 1px; border-top: 1px solid #111; padding-top: 15px; }
 
         .btn-main { display: inline-block; margin-top: 60px; padding: 18px 50px; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; font-family: 'Cinzel', serif; letter-spacing: 3px; transition: 0.4s; font-size: 0.9rem; }
         .btn-main:hover { background: #d4af37; color: #000; }
@@ -38,35 +51,39 @@
         <div class="tagline">The Song That Was Never Silent</div>
 
         <div class="hero-statement">
-            Open the Gates of an <span class="highlight">Exciting Art Liturgy</span>.
+            Open the Gates of an <span class="key-concept">Exciting Art Liturgy</span>.
         </div>
 
         <div class="description">
-            Explore the <strong>Grand Art Canon</strong>, where the Torah—revealed as a <em>Grand Rap-Opera</em>—unfolds through its original poetic and musical architecture. 
-            A discovery of the hidden DNA that once shaped the sound of the world.
+            Explore the <span class="key-concept">Grand Art Canon</span>, where the <span class="key-concept">Torah</span>—revealed as a <span class="key-concept">Grand Rap-Opera</span>—unfolds through its original poetic and musical architecture.
+        </div>
+
+        <div class="journey-preview">
+            <h3>The Journey</h3>
+            <p>From a moment of isolation to a global revelation. A discovery that bridges ancient tradition with modern science and the halls of the world's leading universities.</p>
         </div>
 
         <div class="portal-grid">
             <div class="portal-card">
-                <div class="level-tag">Low-Level Foundation</div>
                 <h3>The Code</h3>
-                <p>The mathematical and syllabic engine. Exploring the musical and poetic techniques that form the structural DNA of the sacred text.</p>
+                <p>The mathematical and syllabic engine. Exploring the hidden DNA and technical foundations of the sacred text.</p>
+                <span class="level-note">Low-level musical & poetic techniques</span>
             </div>
 
             <div class="portal-card">
-                <div class="level-tag">High-Level Presence</div>
                 <h3>Performance</h3>
-                <p>The actual implementation of the Grand Rap-Opera. Experience the rhythmic energy and the breathtaking presence of the revived liturgy.</p>
+                <p>The actual implementation of the liturgy. Experience the rhythmic energy and the breathtaking presence of the revived Song.</p>
+                <span class="level-note">High-level presence & execution</span>
             </div>
 
             <div class="portal-card">
-                <div class="level-tag">Aesthetic Architecture</div>
                 <h3>The Poetics</h3>
-                <p>Decoding the multi-layered rhyme chains and compositional grammar that bridge ancient tradition with modern art.</p>
+                <p>Decoding the multi-layered rhyme chains and compositional grammar of the Grand Art Canon.</p>
+                <span class="level-note">Actual implementation of the Word</span>
             </div>
         </div>
 
-        <a href="mailto:eliahu.glikshtern@gmail.com" class="btn-main">Step into the Journey</a>
+        <a href="mailto:eliahu.glikshtern@gmail.com" class="btn-main">Step into the Discovery</a>
 
         <div class="footer">
             HaShira.com | 2024 | Decoding the Original Song <br>
