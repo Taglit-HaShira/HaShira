@@ -6,64 +6,82 @@
     <title>HaShira | The Song that was never silent</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora:italic,wght@0,400;1,400&display=swap" rel="stylesheet">
     <style>
+        /* Базовые настройки для всего экрана */
         body { 
             background-color: #080808; 
             color: #e0e0e0; 
             font-family: 'Lora', serif; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
             margin: 0; 
-            text-align: center; 
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        .container { padding: 40px; max-width: 750px; }
+
+        /* Контейнер, который подстраивается под устройство */
+        .container { 
+            width: 90%;
+            max-width: 800px;
+            margin: auto; /* Центрирует по вертикали и горизонтали */
+            padding: 40px 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Адаптивный заголовок */
         h1 { 
             font-family: 'Cinzel', serif; 
-            font-size: 4rem; 
+            font-size: clamp(2.5rem, 8vw, 4rem); /* Уменьшается на телефонах */
             color: #d4af37; 
             margin: 0 0 10px 0; 
-            letter-spacing: 6px;
+            letter-spacing: clamp(2px, 1vw, 6px);
             font-weight: normal;
         }
+
         h2 { 
             font-weight: normal; 
             font-style: italic; 
             color: #a0a0a0; 
-            margin-bottom: 50px; 
-            font-size: 1.4rem;
+            margin-bottom: clamp(20px, 5vh, 50px); 
+            font-size: clamp(1.1rem, 4vw, 1.4rem);
             letter-spacing: 1px;
         }
+
         p { 
-            font-size: 1.25rem; 
+            font-size: clamp(1.1rem, 3vw, 1.25rem); 
             line-height: 1.8; 
             color: #cccccc; 
-            margin-bottom: 40px; 
+            margin-bottom: 30px; 
         }
+
         .highlight {
             color: #d4af37;
             font-weight: bold;
-            font-size: 1.4rem;
+            font-size: clamp(1.2rem, 4vw, 1.4rem);
+            margin-top: 20px;
         }
+
         .footer { 
-            margin-top: 80px; /* Увеличил отступ сверху */
+            margin-top: 60px; 
             font-size: 0.85rem; 
             color: #666; 
             text-transform: uppercase; 
             letter-spacing: 2px; 
         }
+
         .contact-link { 
-            display: inline-block; /* Позволяет работать отступам */
-            margin-top: 20px; /* Отступ над самой ссылкой */
+            display: inline-block;
+            margin-top: 15px;
             color: #d4af37; 
             text-decoration: none; 
             border-bottom: 1px solid #333; 
             transition: 0.4s; 
             padding-bottom: 5px;
         }
-        .contact-link:hover { 
-            border-bottom: 1px solid #d4af37; 
-            color: #ffffff;
+
+        /* Убираем фиксированную высоту для мобильных, чтобы можно было скроллить */
+        @media (max-height: 600px) {
+            .container { margin: 20px auto; }
         }
     </style>
 </head>
@@ -86,7 +104,7 @@
 
         <div class="footer">
             Digital platform under reconstruction <br>
-            <a href="mailto:gli.biz@outlook.com" class="contact-link">Contact Project Lead</a>
+            <a href="mailto:gli.biz@outlook.COM" class="contact-link">Contact Project Lead</a>
         </div>
     </div>
 </body>
