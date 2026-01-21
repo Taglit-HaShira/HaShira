@@ -3,73 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HaShira | The Music of the Torah</title>
+    <title>HaShira | The Grand Art Canon of the Torah</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora:italic,wght@0,400;1,400&display=swap" rel="stylesheet">
     <style>
         body { background-color: #080808; color: #e0e0e0; font-family: 'Lora', serif; margin: 0; padding: 0; }
-        .container { width: 90%; max-width: 1000px; margin: auto; padding: 80px 20px; text-align: center; }
+        .container { width: 90%; max-width: 1100px; margin: auto; padding: 60px 20px; text-align: center; }
         
-        h1 { font-family: 'Cinzel', serif; font-size: clamp(2.5rem, 8vw, 4.5rem); color: #d4af37; margin: 0; letter-spacing: 6px; }
-        .tagline { font-size: 1.2rem; color: #888; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 50px; }
+        h1 { font-family: 'Cinzel', serif; font-size: clamp(2.5rem, 8vw, 4rem); color: #d4af37; margin: 0; letter-spacing: 4px; }
+        .tagline { font-size: clamp(0.9rem, 2.5vw, 1.1rem); color: #888; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 50px; }
         
-        .intro-text { font-size: 1.4rem; line-height: 1.8; max-width: 800px; margin: 0 auto 60px auto; color: #ccc; }
-        .highlight-gold { color: #d4af37; font-weight: bold; }
+        .hero-statement { font-size: 1.5rem; line-height: 1.7; max-width: 900px; margin: 0 auto 60px auto; color: #eee; font-style: italic; border-bottom: 1px solid #222; padding-bottom: 40px; }
+        .highlight { color: #d4af37; font-style: normal; font-weight: bold; }
 
-        /* Поля проекта */
-        .fields-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px; }
-        .field-box { border: 1px solid #222; padding: 30px; text-align: left; transition: 0.4s; }
-        .field-box:hover { border-color: #d4af37; background: #0c0c0c; }
-        .field-box h3 { font-family: 'Cinzel', serif; color: #d4af37; margin-top: 0; }
+        /* Секция Полей (The Realms) */
+        .realms { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .realm-card { background: #0e0e0e; border: 1px solid #1a1a1a; padding: 35px; text-align: left; transition: all 0.5s ease; position: relative; overflow: hidden; }
+        .realm-card:hover { border-color: #d4af37; transform: translateY(-5px); }
+        .realm-card h3 { font-family: 'Cinzel', serif; color: #d4af37; margin-top: 0; font-size: 1.4rem; letter-spacing: 2px; }
+        .realm-card p { font-size: 1.05rem; line-height: 1.6; color: #bbb; }
         
-        .btn-link { color: #d4af37; text-decoration: none; border-bottom: 1px solid #d4af37; padding-bottom: 3px; font-size: 0.9rem; }
-        
-        .published-work { background: #111; padding: 40px; margin-top: 80px; border-radius: 4px; }
-        .published-work h2 { font-family: 'Cinzel', serif; color: #d4af37; font-size: 1.5rem; }
+        /* Ссылка на публикацию */
+        .publication-bar { margin-top: 80px; padding: 30px; border: 1px double #333; background: #0c0c0c; display: inline-block; width: 100%; box-sizing: border-box; }
+        .pub-link { color: #d4af37; text-decoration: none; font-family: 'Cinzel', serif; letter-spacing: 1px; border: 1px solid #d4af37; padding: 10px 20px; transition: 0.3s; display: inline-block; margin-top: 15px; }
+        .pub-link:hover { background: #d4af37; color: #000; }
 
-        .footer { margin-top: 100px; font-size: 0.8rem; color: #555; letter-spacing: 2px; }
+        .footer { margin-top: 80px; font-size: 0.75rem; color: #444; text-transform: uppercase; letter-spacing: 3px; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>HASHIRA</h1>
-        <div class="tagline">The Song That Was Never Silent</div>
+        <div class="tagline">The Grand Art Canon: Poetics & Sound</div>
 
-        <div class="intro-text">
-            For two thousand years, the Book of Books was read. <br> 
-            <span class="highlight-gold">Now, it is heard.</span> <br><br>
-            The ancient <em>Ta’amei Mikra</em> have been decoded, revealing that the Torah is not just prose, but a continuous, rhythmic, and rhymed musical masterpiece.
+        <div class="hero-statement">
+            The Torah is not a collection of prose. <br>
+            It is a <span class="highlight">Multilayered Poetic Masterpiece</span>, 
+            governed by a sophisticated system of rhyme and rhythm that has remained hidden for two millennia.
         </div>
 
-        <div class="fields-grid">
-            <div class="field-box">
-                <h3>The Academy</h3>
-                <p>Scientific exploration of the Syllabic Sound System. Quantitative analysis and the mathematics of the 12-unit rhythmic cycle.</p>
-                <span style="color:#555">Scientific manuscripts under review.</span>
+        <div class="realms">
+            <div class="realm-card">
+                <h3>The Poetics</h3>
+                <p>Discovery of a progressive compositional grammar. Beyond simple parallelism: revealing complex rhyme chains and structural sound clusters that organize the entire Pentateuch.</p>
+                <i style="color: #666; font-size: 0.9rem;">Current focus: Manuscripts for Oxford & Cambridge journals.</i>
             </div>
 
-            <div class="field-box">
-                <h3>The Studio</h3>
-                <p>Bringing the ancient scales to life. A space for musicians and creators to explore the original melodies of the Canon.</p>
-                <span class="btn-link">Coming Soon</span>
+            <div class="realm-card">
+                <h3>The Sound</h3>
+                <p>The <em>Ta’amei Mikra</em> decoded as a syllabic sound system. Quantitative evidence of a 12-unit rhythmic periodicity (Z-score +5.49) that stabilizes the performance of the Song.</p>
             </div>
 
-            <div class="field-box">
-                <h3>The Commentary</h3>
-                <p>When music clarifies the word. Resolving complex texts through the lens of poetic and musical intonation.</p>
-                <span class="btn-link">Developing Archive</span>
+            <div class="realm-card">
+                <h3>The Impact</h3>
+                <p>Resolving "impossible" texts through musical intonation. A platform for creators to explore how this ancient poetic architecture continues to shape global art and culture.</p>
             </div>
         </div>
 
-        <div class="published-work">
-            <h2>Featured Publication</h2>
-            <p><strong>"The Magic Violin"</strong> — includes the fundamental work on the decoded notation system and its cultural impact.</p>
-            <a href="https://www.harrassowitz-verlag.de/%22Magic_Violin%22/titel_7552.ahtml" target="_blank" class="btn-link">View at Harrassowitz Verlag</a>
+        <div class="publication-bar">
+            <div style="color: #888; font-size: 0.9rem; margin-bottom: 10px;">FOUNDATIONAL PUBLICATION</div>
+            <div style="font-size: 1.2rem; margin-bottom: 10px;"><strong>The Magic Violin</strong> — <i>Structural Poetics and Decoded Notation</i></div>
+            <a href="https://www.harrassowitz-verlag.de/%22Magic_Violin%22/titel_7552.ahtml" target="_blank" class="pub-link">View Publication</a>
         </div>
 
         <div class="footer">
-            DIGITAL PLATFORM UNDER DEVELOPMENT | 2024 <br>
-            <a href="mailto:eliahu.glikshtern@gmail.com" style="color: #666; text-decoration: none;">Contact Project Lead</a>
+            Digital Archive in Reconstruction | 2024 <br>
+            <a href="mailto:eliahu.glikshtern@gmail.com" style="color: #444; text-decoration: none; margin-top: 10px; display: block;">Contact Lead Researcher</a>
         </div>
     </div>
 
