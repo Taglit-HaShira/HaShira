@@ -3,102 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HaShira | The Syllabic Sound System of the Pentateuch</title>
+    <title>HaShira | The Music of the Torah</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora:italic,wght@0,400;1,400&display=swap" rel="stylesheet">
     <style>
-        /* Сохраняем вашу цветовую гамму и добавляем немного глубины */
-        body { 
-            background-color: #0a0a0a; 
-            color: #d1d1d1; 
-            font-family: 'Lora', serif; 
-            margin: 0; padding: 0;
-            line-height: 1.6;
-        }
-        .container { 
-            width: 90%; max-width: 900px; 
-            margin: auto; padding: 60px 20px; 
-            text-align: center; 
-        }
-        h1 { 
-            font-family: 'Cinzel', serif; 
-            font-size: clamp(2.5rem, 8vw, 4.5rem); 
-            color: #d4af37; margin: 0; 
-            letter-spacing: 8px; font-weight: normal;
-        }
-        .subtitle { 
-            font-size: clamp(1rem, 3vw, 1.2rem); 
-            color: #888; text-transform: uppercase; 
-            letter-spacing: 4px; margin-bottom: 40px;
-        }
-        .hero-text {
-            font-size: 1.4rem; font-style: italic;
-            color: #e0e0e0; margin-bottom: 50px;
-            border-left: 2px solid #d4af37;
-            padding-left: 20px; text-align: left;
-            max-width: 700px; margin-left: auto; margin-right: auto;
-        }
-        /* Секции для интриги */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px; margin-top: 60px; text-align: left;
-        }
-        .feature-card {
-            background: #121212; border: 1px solid #222;
-            padding: 25px; transition: 0.3s;
-        }
-        .feature-card:hover { border-color: #d4af37; }
-        .feature-card h3 { color: #d4af37; font-family: 'Cinzel', serif; margin-top: 0; }
+        body { background-color: #080808; color: #e0e0e0; font-family: 'Lora', serif; margin: 0; padding: 0; }
+        .container { width: 90%; max-width: 1000px; margin: auto; padding: 80px 20px; text-align: center; }
         
-        .highlight {
-            background: linear-gradient(transparent 70%, rgba(212, 175, 55, 0.1) 0%);
-            color: #d4af37;
-        }
+        h1 { font-family: 'Cinzel', serif; font-size: clamp(2.5rem, 8vw, 4.5rem); color: #d4af37; margin: 0; letter-spacing: 6px; }
+        .tagline { font-size: 1.2rem; color: #888; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 50px; }
+        
+        .intro-text { font-size: 1.4rem; line-height: 1.8; max-width: 800px; margin: 0 auto 60px auto; color: #ccc; }
+        .highlight-gold { color: #d4af37; font-weight: bold; }
 
-        .cta-section { margin-top: 80px; padding: 40px; border-top: 1px solid #222; }
-        .contact-link { 
-            color: #d4af37; text-decoration: none; 
-            font-size: 1.1rem; border: 1px solid #d4af37;
-            padding: 10px 25px; transition: 0.4s;
-        }
-        .contact-link:hover { background: #d4af37; color: #000; }
+        /* Поля проекта */
+        .fields-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px; }
+        .field-box { border: 1px solid #222; padding: 30px; text-align: left; transition: 0.4s; }
+        .field-box:hover { border-color: #d4af37; background: #0c0c0c; }
+        .field-box h3 { font-family: 'Cinzel', serif; color: #d4af37; margin-top: 0; }
+        
+        .btn-link { color: #d4af37; text-decoration: none; border-bottom: 1px solid #d4af37; padding-bottom: 3px; font-size: 0.9rem; }
+        
+        .published-work { background: #111; padding: 40px; margin-top: 80px; border-radius: 4px; }
+        .published-work h2 { font-family: 'Cinzel', serif; color: #d4af37; font-size: 1.5rem; }
+
+        .footer { margin-top: 100px; font-size: 0.8rem; color: #555; letter-spacing: 2px; }
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>HASHIRA</h1>
-        <div class="subtitle">The Song that was never silent</div>
-        
-        <div class="hero-text">
-            "What if the world’s most transmitted text is not prose, but a continuous musical composition governed by a <span class="highlight">latent syllabic code</span>?"
+        <div class="tagline">The Song That Was Never Silent</div>
+
+        <div class="intro-text">
+            For two thousand years, the Book of Books was read. <br> 
+            <span class="highlight-gold">Now, it is heard.</span> <br><br>
+            The ancient <em>Ta’amei Mikra</em> have been decoded, revealing that the Torah is not just prose, but a continuous, rhythmic, and rhymed musical masterpiece.
         </div>
 
-        <p>For millennia, the Torah has been read as scripture of law and narrative. Our research reveals a different reality: a sophisticated <strong>Syllabic Sound System</strong> where cantillation marks (Ta’amei Mikra) act as rhythmic operators, stabilizing a grand 12-unit periodic harmony.</p>
+        <div class="fields-grid">
+            <div class="field-box">
+                <h3>The Academy</h3>
+                <p>Scientific exploration of the Syllabic Sound System. Quantitative analysis and the mathematics of the 12-unit rhythmic cycle.</p>
+                <span style="color:#555">Scientific manuscripts under review.</span>
+            </div>
 
-        <div class="features">
-            <div class="feature-card">
-                <h3>The Discovery</h3>
-                <p>Decoding the <em>Ta’amei Mikra</em> not just as syntax, but as a precise musical notation that reveals the "Divine Opera" of the Pentateuch.</p>
+            <div class="field-box">
+                <h3>The Studio</h3>
+                <p>Bringing the ancient scales to life. A space for musicians and creators to explore the original melodies of the Canon.</p>
+                <span class="btn-link">Coming Soon</span>
             </div>
-            <div class="feature-card">
-                <h3>The Science</h3>
-                <p>Quantitative analysis shows a statistically significant phase alignment (Z = +5.49). The text is mathematically designed to sing.</p>
-            </div>
-            <div class="feature-card">
-                <h3>The Canon</h3>
-                <p>From the Pentateuch to the Psalms, tracing a generative model of performance that shaped the DNA of global culture.</p>
+
+            <div class="field-box">
+                <h3>The Commentary</h3>
+                <p>When music clarifies the word. Resolving complex texts through the lens of poetic and musical intonation.</p>
+                <span class="btn-link">Developing Archive</span>
             </div>
         </div>
 
-        <div class="cta-section">
-            <p>Our comprehensive research and the "PartiturA" manuscripts are currently under scientific review.</p>
-            <p class="highlight" style="margin-bottom: 40px;">The Gates are opening soon.</p>
-            <a href="mailto:eliahu.glikshtern@gmail.com" class="contact-link">Inquiries & Collaboration</a>
+        <div class="published-work">
+            <h2>Featured Publication</h2>
+            <p><strong>"The Magic Violin"</strong> — includes the fundamental work on the decoded notation system and its cultural impact.</p>
+            <a href="https://www.harrassowitz-verlag.de/%22Magic_Violin%22/titel_7552.ahtml" target="_blank" class="btn-link">View at Harrassowitz Verlag</a>
         </div>
 
-        <div style="margin-top: 40px; color: #444; font-size: 0.8rem; letter-spacing: 2px;">
-            PLATFORM RECONSTRUCTION | 2024
+        <div class="footer">
+            DIGITAL PLATFORM UNDER DEVELOPMENT | 2024 <br>
+            <a href="mailto:eliahu.glikshtern@gmail.com" style="color: #666; text-decoration: none;">Contact Project Lead</a>
         </div>
     </div>
+
 </body>
 </html>
