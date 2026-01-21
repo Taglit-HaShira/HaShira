@@ -3,108 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HaShira | The Song that was never silent</title>
+    <title>HaShira | The Syllabic Sound System of the Pentateuch</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora:italic,wght@0,400;1,400&display=swap" rel="stylesheet">
     <style>
-        /* Базовые настройки для всего экрана */
+        /* Сохраняем вашу цветовую гамму и добавляем немного глубины */
         body { 
-            background-color: #080808; 
-            color: #e0e0e0; 
+            background-color: #0a0a0a; 
+            color: #d1d1d1; 
             font-family: 'Lora', serif; 
-            margin: 0; 
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            margin: 0; padding: 0;
+            line-height: 1.6;
         }
-
-        /* Контейнер, который подстраивается под устройство */
         .container { 
-            width: 90%;
-            max-width: 800px;
-            margin: auto; /* Центрирует по вертикали и горизонтали */
-            padding: 40px 20px;
-            text-align: center;
-            box-sizing: border-box;
+            width: 90%; max-width: 900px; 
+            margin: auto; padding: 60px 20px; 
+            text-align: center; 
         }
-
-        /* Адаптивный заголовок */
         h1 { 
             font-family: 'Cinzel', serif; 
-            font-size: clamp(2.5rem, 8vw, 4rem); /* Уменьшается на телефонах */
-            color: #d4af37; 
-            margin: 0 0 10px 0; 
-            letter-spacing: clamp(2px, 1vw, 6px);
-            font-weight: normal;
+            font-size: clamp(2.5rem, 8vw, 4.5rem); 
+            color: #d4af37; margin: 0; 
+            letter-spacing: 8px; font-weight: normal;
         }
-
-        h2 { 
-            font-weight: normal; 
-            font-style: italic; 
-            color: #a0a0a0; 
-            margin-bottom: clamp(20px, 5vh, 50px); 
-            font-size: clamp(1.1rem, 4vw, 1.4rem);
-            letter-spacing: 1px;
+        .subtitle { 
+            font-size: clamp(1rem, 3vw, 1.2rem); 
+            color: #888; text-transform: uppercase; 
+            letter-spacing: 4px; margin-bottom: 40px;
         }
-
-        p { 
-            font-size: clamp(1.1rem, 3vw, 1.25rem); 
-            line-height: 1.8; 
-            color: #cccccc; 
-            margin-bottom: 30px; 
+        .hero-text {
+            font-size: 1.4rem; font-style: italic;
+            color: #e0e0e0; margin-bottom: 50px;
+            border-left: 2px solid #d4af37;
+            padding-left: 20px; text-align: left;
+            max-width: 700px; margin-left: auto; margin-right: auto;
         }
-
+        /* Секции для интриги */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px; margin-top: 60px; text-align: left;
+        }
+        .feature-card {
+            background: #121212; border: 1px solid #222;
+            padding: 25px; transition: 0.3s;
+        }
+        .feature-card:hover { border-color: #d4af37; }
+        .feature-card h3 { color: #d4af37; font-family: 'Cinzel', serif; margin-top: 0; }
+        
         .highlight {
+            background: linear-gradient(transparent 70%, rgba(212, 175, 55, 0.1) 0%);
             color: #d4af37;
-            font-weight: bold;
-            font-size: clamp(1.2rem, 4vw, 1.4rem);
-            margin-top: 20px;
         }
 
-        .footer { 
-            margin-top: 60px; 
-            font-size: 0.85rem; 
-            color: #666; 
-            text-transform: uppercase; 
-            letter-spacing: 2px; 
-        }
-
+        .cta-section { margin-top: 80px; padding: 40px; border-top: 1px solid #222; }
         .contact-link { 
-            display: inline-block;
-            margin-top: 15px;
-            color: #d4af37; 
-            text-decoration: none; 
-            border-bottom: 1px solid #333; 
-            transition: 0.4s; 
-            padding-bottom: 5px;
+            color: #d4af37; text-decoration: none; 
+            font-size: 1.1rem; border: 1px solid #d4af37;
+            padding: 10px 25px; transition: 0.4s;
         }
-
-        /* Убираем фиксированную высоту для мобильных, чтобы можно было скроллить */
-        @media (max-height: 600px) {
-            .container { margin: 20px auto; }
-        }
+        .contact-link:hover { background: #d4af37; color: #000; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>HaShira</h1>
-        <h2>The Song that was never silent</h2>
+        <h1>HASHIRA</h1>
+        <div class="subtitle">The Song that was never silent</div>
         
-        <p>
-            For two thousand years, the musical score of the Torah remained hidden within its very letters. 
-            Today, what was once read as prose is revealed as a masterpiece of rhythmic and rhymed composition—a living, <strong>progressive</strong> harmony.
-        </p>
+        <div class="hero-text">
+            "What if the world’s most transmitted text is not prose, but a continuous musical composition governed by a <span class="highlight">latent syllabic code</span>?"
+        </div>
 
-        <p>
-            Through a new decoding of the <em>Ta’amei Mikra</em>, we are unlocking a sound system that feels as contemporary as it is eternal. 
-            The grandeur of the original Song is being brought back to life.
-        </p>
+        <p>For millennia, the Torah has been read as scripture of law and narrative. Our research reveals a different reality: a sophisticated <strong>Syllabic Sound System</strong> where cantillation marks (Ta’amei Mikra) act as rhythmic operators, stabilizing a grand 12-unit periodic harmony.</p>
 
-        <p class="highlight">The Gates of HaShira are opening soon.</p>
+        <div class="features">
+            <div class="feature-card">
+                <h3>The Discovery</h3>
+                <p>Decoding the <em>Ta’amei Mikra</em> not just as syntax, but as a precise musical notation that reveals the "Divine Opera" of the Pentateuch.</p>
+            </div>
+            <div class="feature-card">
+                <h3>The Science</h3>
+                <p>Quantitative analysis shows a statistically significant phase alignment (Z = +5.49). The text is mathematically designed to sing.</p>
+            </div>
+            <div class="feature-card">
+                <h3>The Canon</h3>
+                <p>From the Pentateuch to the Psalms, tracing a generative model of performance that shaped the DNA of global culture.</p>
+            </div>
+        </div>
 
-        <div class="footer">
-            Digital platform under reconstruction <br>
-            <a href="mailto:gli.biz@outlook.COM" class="contact-link">Contact Project Lead</a>
+        <div class="cta-section">
+            <p>Our comprehensive research and the "PartiturA" manuscripts are currently under scientific review.</p>
+            <p class="highlight" style="margin-bottom: 40px;">The Gates are opening soon.</p>
+            <a href="mailto:eliahu.glikshtern@gmail.com" class="contact-link">Inquiries & Collaboration</a>
+        </div>
+
+        <div style="margin-top: 40px; color: #444; font-size: 0.8rem; letter-spacing: 2px;">
+            PLATFORM RECONSTRUCTION | 2024
         </div>
     </div>
 </body>
