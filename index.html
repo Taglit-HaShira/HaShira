@@ -3,93 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HaShira | The Song That Was Never Silent</title>
+    <title>HaShira | The Song that was never silent</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora:italic,wght@0,400;1,400&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #050505; color: #e0e0e0; font-family: 'Lora', serif; margin: 0; padding: 0; line-height: 1.6; }
-        .container { width: 90%; max-width: 1000px; margin: auto; padding: 80px 20px; text-align: center; }
-        
-        h1 { font-family: 'Cinzel', serif; font-size: clamp(3rem, 10vw, 5.5rem); color: #d4af37; margin: 0; letter-spacing: 12px; }
-        .tagline { font-size: 1.25rem; color: #888; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 60px; font-weight: normal; }
-        
-        .hero-statement { font-size: clamp(1.5rem, 4vw, 2.2rem); line-height: 1.3; max-width: 900px; margin: 0 auto 40px auto; color: #fff; }
-        
-        /* Равнозначное выделение ключевых слов */
-        .key-concept { color: #d4af37; font-weight: bold; font-style: normal; }
-
-        .description { font-size: 1.35rem; color: #ccc; max-width: 850px; margin: 0 auto 40px auto; line-height: 1.8; }
-
-        /* Секция Journey над кнопками */
-        .journey-preview {
-            max-width: 800px; margin: 0 auto 60px auto; padding: 30px;
-            border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
-            background: rgba(212, 175, 55, 0.02);
+        body { 
+            background-color: #080808; 
+            color: #e0e0e0; 
+            font-family: 'Lora', serif; 
+            margin: 0; 
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
-        .journey-preview h3 { font-family: 'Cinzel', serif; color: #d4af37; margin-top: 0; letter-spacing: 2px; }
-        .journey-preview p { font-style: italic; color: #aaa; font-size: 1.1rem; }
 
-        /* Сетка кнопок-порталов */
-        .portal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
-        .portal-card { background: #0a0a0a; border: 1px solid #1a1a1a; padding: 45px 30px; transition: 0.5s ease; text-align: left; text-decoration: none; color: inherit; display: block; }
-        .portal-card:hover { border-color: #d4af37; background: #0f0f0f; transform: translateY(-8px); }
-        .portal-card h3 { font-family: 'Cinzel', serif; color: #d4af37; margin-top: 0; font-size: 1.6rem; letter-spacing: 2px; }
-        .portal-card p { font-size: 1rem; color: #999; margin-bottom: 0; }
-        
-        /* Интегрированные технические пояснения (внизу карточек) */
-        .level-note { display: block; margin-top: 20px; font-size: 0.75rem; color: #555; text-transform: uppercase; letter-spacing: 1px; border-top: 1px solid #111; padding-top: 15px; }
+        .container { 
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+        }
 
-        .btn-main { display: inline-block; margin-top: 60px; padding: 18px 50px; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; font-family: 'Cinzel', serif; letter-spacing: 3px; transition: 0.4s; font-size: 0.9rem; }
-        .btn-main:hover { background: #d4af37; color: #000; }
+        h1 { 
+            font-family: 'Cinzel', serif; 
+            font-size: clamp(2.5rem, 10vw, 4.5rem); 
+            color: #d4af37; 
+            margin: 0; 
+            letter-spacing: 8px;
+            font-weight: normal;
+        }
 
-        .footer { margin-top: 120px; padding: 40px 0; border-top: 1px solid #111; font-size: 0.75rem; color: #444; letter-spacing: 3px; text-transform: uppercase; }
+        h2 { 
+            font-weight: normal; 
+            font-style: italic; 
+            color: #a0a0a0; 
+            margin-top: 10px;
+            margin-bottom: 60px; 
+            font-size: clamp(1.1rem, 4vw, 1.5rem);
+            letter-spacing: 2px;
+        }
+
+        .status {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .contact-link { 
+            display: inline-block;
+            color: #d4af37; 
+            text-decoration: none; 
+            border: 1px solid #d4af37;
+            padding: 12px 25px;
+            transition: 0.4s; 
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .contact-link:hover { 
+            background-color: #d4af37;
+            color: #080808;
+        }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>HASHIRA</h1>
-        <div class="tagline">The Song That Was Never Silent</div>
-
-        <div class="hero-statement">
-            Open the Gates of an <span class="key-concept">Exciting Art Liturgy</span>.
-        </div>
-
-        <div class="description">
-            Explore the <span class="key-concept">Art Canon</span>, where the <span class="key-concept">Torah</span>—revealed as a <span class="key-concept">Grand Rap-Opera</span>—unfolds through its original poetic and musical architecture.
-        </div>
-
-        <div class="journey-preview">
-            <h3>The Journey</h3>
-            <p>From a moment of isolation to a global revelation. A discovery that bridges ancient tradition with modern science and the halls of the world's leading universities.</p>
-        </div>
-
-        <div class="portal-grid">
-            <div class="portal-card">
-                <h3>The Code</h3>
-                <p>The mathematical and syllabic engine. Exploring the hidden DNA and technical foundations of the sacred text.</p>
-                <span class="level-note">Low-level musical & poetic techniques</span>
-            </div>
-
-            <div class="portal-card">
-                <h3>Performance</h3>
-                <p>The actual implementation of the liturgy. Experience the rhythmic energy and the breathtaking presence of the revived Song.</p>
-                <span class="level-note">High-level presence & execution</span>
-            </div>
-
-            <div class="portal-card">
-                <h3>The Poetics</h3>
-                <p>Decoding the multi-layered rhyme chains and compositional grammar of the Grand Art Canon.</p>
-                <span class="level-note">Actual implementation of the Word</span>
-            </div>
-        </div>
-
-        <a href="mailto:eliahu.glikshtern@gmail.com" class="btn-main">Step into the Discovery</a>
-
-        <div class="footer">
-            HaShira.com | 2024 | Decoding the Original Song <br>
-            <p style="margin-top: 15px; color: #222; text-transform: none; font-style: italic;">Scientific verification in progress for major academic publications.</p>
-        </div>
+        <h1>HaShira</h1>
+        <h2>The Song that was never silent</h2>
+        
+        <div class="status">Digital Platform Under Reconstruction</div>
+        
+        <a href="mailto:gli.biz@outlook.com" class="contact-link">Contact Project Lead</a>
     </div>
-
 </body>
 </html>
